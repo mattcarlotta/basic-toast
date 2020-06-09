@@ -1,6 +1,6 @@
 import { toast } from "react-toastify";
 
-export default function Home() {
+const Home = () => {
   const notify = () => toast("Hello World!");
 
   return (
@@ -21,4 +21,6 @@ export default function Home() {
       `}</style>
     </div>
   );
-}
+};
+
+export default Home;
