@@ -1,9 +1,14 @@
+import { toast } from "react-toastify";
+
 export default function Home() {
+  const notify = () => toast("Hello World!");
+
   return (
-    <div className="hello">
-      <p>Hello World</p>
+    <div onClick={notify} className="hello">
+      <p>Click to Show Toast Message</p>
       <style jsx>{`
         .hello {
+          cursor: pointer;
           font: 15px Helvetica, Arial, sans-serif;
           background: #eee;
           padding: 100px;
@@ -15,5 +20,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
